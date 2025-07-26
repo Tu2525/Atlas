@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'providers/chat_provider.dart';
@@ -6,7 +8,9 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load(fileName: ".env");
+  final file = File('.env');
+  print("ENV file exists: ${await file.exists()}");
+  await dotenv.load(fileName: '.env');
   runApp(const AtlasApp());
 }
 
