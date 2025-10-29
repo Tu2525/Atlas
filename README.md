@@ -78,7 +78,7 @@ Atlas is a Flutter-based chatbot application that helps users discover their ide
 
 1. **Clone the repository**
    ```bash
-   git clone <https://github.com/Tu2525/Atlas>
+   git clone https://github.com/Tu2525/Atlas
    cd atlas
    ```
 
